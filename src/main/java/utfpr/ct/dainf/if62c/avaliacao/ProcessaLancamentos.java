@@ -42,7 +42,7 @@ public class ProcessaLancamentos {
     private Lancamento processaLinha(String linha) {
         String s1,s2,s3,s4;
         
-        if(linha==null || linha.length()!= 86){
+        if(linha==null){
         throw new UnsupportedOperationException("Arquivo Vazio");
         }
         s1 = linha.substring(1, 6);
